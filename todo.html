@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Test 1</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/todo.css">
+    <script defer type="text/javascript" src="/js/todo.js"></script>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="/">Home</a> &gt; <span class="active">To Do List</span>
+        </p>
+    </header>
+
+    <section>
+        <h1>My To Do List JS App</h1>
+
+        <p>Click "Add" to save items to the To Do List.</p>
+        <p>Click "Done" to move the item to the Completed List.</p>
+        <p>Click "Delete" to remove the item from the To Do List.</p>
+
+        <div>
+            <input id="new-item" type="text" placeholder="New item..." maxlength="42" autofocus>
+            <button id="add-btn">Add</button>
+        </div>
+    </section>
+
+    <section>
+        <!-- To Do List -->
+        <div class="listItems">
+            <h2>The To Do List</h2>
+            <ul id="to-do-list">
+                <li>Item the Fourth <button class="move">Done</button><button class="remove">Delete</button></li>
+                <li>Item the Fifth <button class="move">Done</button><button class="remove">Delete</button></li>
+                <li>Item the Sixth <button class="move">Done</button><button class="remove">Delete</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <!-- Completed List -->
+        <div class="listItems">
+            <h2>The Completed List</h2>
+            <ul id="completed-list">
+                <li>Item the First</li>
+                <li>Item the Next</li>
+                <li>Item the Third</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

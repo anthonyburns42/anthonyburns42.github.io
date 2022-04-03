@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tony's Calculator</title>
+        <link rel="stylesheet" href="/css/calculon.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <p>
+                    <a href="/">Home</a> &gt; <span class="active">Calculator</span>
+                </p>
+            </header>
+            <div class="casing">
+                <p>TK-421</p>
+                <div class="numdisplay">
+                    <div id="left-operand"></div>
+                    <div id="operation"></div>
+                    <div id="right-operand"></div>
+                    <div id="nameplate">
+                        <span>Tony's Calculator!</span>
+                    </div>
+                </div>
+                <div id="allbtn">
+                    <div class="btnrow">    
+                        <button class="number btn btn-default" data-value="7">7</button>
+                        <button class="number btn btn-default" data-value="8">8</button>
+                        <button class="number btn btn-default" data-value="9">9</button>
+                        <button class="operator btn btn-primary" data-value="+">+</button>
+                    </div>
+                    <div class="btnrow">
+                        <button class="number btn btn-default" data-value="4">4</button>
+                        <button class="number btn btn-default" data-value="5">5</button>
+                        <button class="number btn btn-default" data-value="6">6</button>
+                        <button class="operator btn btn-primary" data-value="-">-</button>
+                    </div>
+                    <div class="btnrow">
+                        <button class="number btn btn-default" data-value="1">1</button>
+                        <button class="number btn btn-default" data-value="2">2</button>
+                        <button class="number btn btn-default" data-value="3">3</button>
+                        <button class="operator btn btn-primary" data-value="*">*</button>
+                    </div>
+                    <div class="btnrow">
+                        <button class="number btn btn-default" data-value="3.14">PI</button>
+                        <button class="number btn btn-default" data-value="0">0</button>
+                        <button class="number btn btn-default" data-value=".">.</button>
+                        <button class="operator btn btn-primary" data-value="/">/</button>
+                    </div>
+                    <div class="btnrow">
+                        <button id="clear" class="btn btn-danger" data-value="C">C</button>
+                        <button id="equals" class="btn btn-success" data-value="=">=</button>
+                        <button class="operator btn btn-primary" data-value="sqrt">&#x221a</button>
+                        <button class="operator btn btn-primary" data-value="^2">^2</button>
+                    </div>
+                </div> <!-- end allbtn -->
+            </div> <!-- end casing -->
+        </div> <!-- end of container -->
+        <script>
+            "use strict";
+
+            (function() {
+                // console.log(document.getElementById("left-operand").innerHTML);
+                // console.log(document.getElementById("operation").innerHTML);
+                // console.log(document.getElementById("right-operand").innerHTML);
+                
+                // Ryan's work on projector. 
+                // var listener3 = function(event) {
+                //     console.log(this.innerHTML);
+                // }
+                    
+                // var buttons = document.getElementsByTagName("button");
+                    
+                // for (var i = 0; i < buttons.length; i += 1) {
+                //     buttons[i].addEventListener("click", listener3, false);
+                // }
+
+                // Long form work through on listener1.
+                // var listener1 = function(event) {
+                //     console.log(this.getAttribute("data-value"));
+                //     var leftOperand = document.getElementById("left-operand");
+                //     var oldValue = leftOperand.innerHTML;
+                //     var clickedValue = this.getAttribute("data-value");
+                //     var valueToDisplay = oldValue + clickedValue;
+                //     leftOperand.innerHTML = valueToDisplay;
+                // }
+
+                // Folded this listener1 into listener3 with if if.
+                // var listener1 = function(event) {
+                //     console.log(this.getAttribute("data-value"));
+                //     var leftOperand = document.getElementById("left-operand");
+                //     leftOperand.innerHTML = leftOperand.innerHTML + this.getAttribute("data-value");   
+                // }
+
+                // var numbers = document.getElementsByClassName("number");
+
+                // for (var i = 0; i < numbers.length; i += 1) {
+                //     numbers[i].addEventListener("click", listener1, false);
+                // }
+
+                var listener2 = function(event) {
+                    console.log(this.getAttribute("data-value"));
+                    var operatorFunction = document.getElementById("operation");
+                    operatorFunction.innerHTML = this.getAttribute("data-value");
+                }
+
+                var operators = document.getElementsByClassName("operator");
+
+                for (var i = 0; i < operators.length; i += 1) {
+                    operators[i].addEventListener("click", listener2, false);
+                }
+
+                var listener3 = function(event) {
+                    // console.log(this.getAttribute("data-value"));
+                    if (document.getElementById("operation").innerHTML == "") {
+                        var leftOperand = document.getElementById("left-operand");
+                        leftOperand.innerHTML = leftOperand.innerHTML + this.getAttribute("data-value");
+                    }
+                    if (document.getElementById("operation").innerHTML == "+" || document.getElementById("operation").innerHTML == "-" || document.getElementById("operation").innerHTML == "*" || document.getElementById("operation").innerHTML == "/") {
+                        var rightOperand = document.getElementById("right-operand");
+                        rightOperand.innerHTML = rightOperand.innerHTML + this.getAttribute("data-value");
+                    }
+                }
+
+                var numbers = document.getElementsByClassName("number");
+
+                for (var i = 0; i < numbers.length; i += 1) {
+                    numbers[i].addEventListener("click", listener3, false);
+                }
+
+                var listener4 = function(event) {
+                    var left = document.getElementById("left-operand").innerHTML;
+                    var middle = document.getElementById("operation").innerHTML;
+                    var right = document.getElementById("right-operand").innerHTML;
+                    console.log(left);
+                    console.log(middle);
+                    console.log(right);
+                    if (middle == "+") {
+                        var result = parseFloat(left) + parseFloat(right);
+                    }
+                    if (middle == "-") {
+                        var result = parseFloat(left) - parseFloat(right);
+                    }
+                    if (middle == "*") {
+                        var result = parseFloat(left) * parseFloat(right);
+                    }
+                    if (middle == "/") {
+                        var result = parseFloat(left) / parseFloat(right);
+                    }
+                    if (middle == "sqrt") {
+                        var result = parseFloat(Math.sqrt(left));
+                    }
+                    if (middle == "^2") {
+                        var result = parseFloat(Math.pow(left, 2));
+                    }
+                    console.log(result); 
+                    var newResult = result.toFixed(2);
+                    console.log(newResult);
+                    document.getElementById("left-operand").innerHTML = newResult;
+                    document.getElementById("operation").innerHTML = "";
+                    document.getElementById("right-operand").innerHTML = "";
+                }
+
+                var equalbtn = document.getElementById("equals");
+                equalbtn.addEventListener("click", listener4, false);
+
+                var listener5 = function(event) {
+                    var leftOperand = document.getElementById("left-operand");
+                    leftOperand.innerHTML = "";
+                    var operatorFunction = document.getElementById("operation");
+                    operatorFunction.innerHTML = "";
+                    var rightOperand = document.getElementById("right-operand");
+                    rightOperand.innerHTML = "";
+                }
+
+                var clearbtn = document.getElementById("clear");
+                clearbtn.addEventListener("click", listener5, false);
+
+            })();
+        </script>
+    </body>
+</html>

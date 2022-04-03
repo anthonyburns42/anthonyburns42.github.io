@@ -1,0 +1,55 @@
+/* START To Do Specific CSS */
+
+body {
+    background: #2D5986;
+    color: #fcfcfc;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p, li {
+    margin-bottom: 5px;
+}
+
+button {
+    background: #dedede;
+    border: none;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 14px;
+    margin: 3px;
+    padding: 6px 12px;
+    width: 70px;
+}
+button:focus {
+    background: #cecece;
+}
+button:hover {
+    background: #cecece;
+}
+button:active {
+    background: #bebebe;
+    box-shadow: inset 0px 0px 6px #444;
+}
+
+:focus {
+    outline: 2px dashed #aeb0b5;
+    outline-offset: 4px;
+}
+
+#completed-list li {
+    text-decoration: line-through;
+}
