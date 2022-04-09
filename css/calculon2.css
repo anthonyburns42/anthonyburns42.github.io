@@ -50,7 +50,7 @@ table {
 
 body {
     background: #f1f1f1;
-    font-family: helvetica, san-serif;
+    font-family: helvetica, arial, san-serif;
 }
 
 a {
@@ -68,7 +68,7 @@ span.active, a.active {
 }
 
 header {
-    margin: 0 10%;
+    margin: 10px 10%;
     padding: 10px 0;
     text-align: left;
 }
@@ -79,53 +79,92 @@ header p:first-child {
 }
 
 .casing {
+    background: #000000;
     border: 3px solid #000000;
-    border-radius: 25px;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: bold;
     height: 350px;
+    margin: 25px auto;
+    overflow: hidden;
     width: 250px;
-    margin: 0 auto;
-    /*padding: 15px;*/
 }
 
 .numdisplay {
-    width: 100%;
+    background-image: linear-gradient(#000000, #333333);
+    border: 2px solid #000000;
+    border-radius: 10px 10px 0 0;
+    color: #ffffff;
     height: 20%;
-    border:  1px solid red;
-    /*height: 75px;*/
-    /*font-size: 18px;*/
+    overflow: hidden;
+    width: 100%;
 }
 
 #left-operand {
-    border: 1px dotted black;
     display: inline-block;
+    float: left;
     height: 100%;
-    width: 30%;
+    line-height: 5;
+    text-align: right;
+    width: 40%;
 }
 #operation {
-    border: 1px dotted sandybrown;
     display: inline-block;
+    float: left;
     height: 100%;
-    width: 30%;
+    line-height: 5;
+    text-align: center;
+    width: 20%;
 }
 #right-operand {
-    border: 1px dotted burlywood;
     display: inline-block;
+    float: left;
     height: 100%;
-    width: 30%;
+    line-height: 5;
+    text-align: left;
+    width: 40%;
 }
 
 #allbtn {
-    width: 100%;
     height: 80%;
-    border: 1px solid green;
-    border-radius: 4px;
+    width: 100%;
 }
 
 .btnrow {
-    height:  20%;
+    height: 20%;
     text-align: center;
-    border:  1px solid orange;
-    /*vertical-align: center;*/
-    /*font-size: 5px;*/
-    /*padding: 5px;*/
+}
+
+.btn {
+    background: #333333;
+    border: 2px solid #000000;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+}
+
+.operator {
+    background: #ff8c00;
+    color: #000000;
+}
+
+#clear, #equals {
+    background: #cccccc;
+    color: #333333;
+}
+
+#clear {
+    border-radius: 0 0 0 10px;
+}
+.btnrow:last-child > .btn:last-child {
+    border-radius: 0 0 10px 0;
 }
