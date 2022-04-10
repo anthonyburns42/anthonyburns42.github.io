@@ -59,110 +59,72 @@
             "use strict";
 
             (function() {
-                // console.log(document.getElementById("left-operand").innerHTML);
-                // console.log(document.getElementById("operation").innerHTML);
-                // console.log(document.getElementById("right-operand").innerHTML);
-                
-                // Ryan's work on projector. 
-                // var listener3 = function(event) {
-                //     console.log(this.innerHTML);
-                // }
-                    
-                // var buttons = document.getElementsByTagName("button");
-                    
-                // for (var i = 0; i < buttons.length; i += 1) {
-                //     buttons[i].addEventListener("click", listener3, false);
-                // }
-
-                // Long form work through on listener1.
-                // var listener1 = function(event) {
-                //     console.log(this.getAttribute("data-value"));
-                //     var leftOperand = document.getElementById("left-operand");
-                //     var oldValue = leftOperand.innerHTML;
-                //     var clickedValue = this.getAttribute("data-value");
-                //     var valueToDisplay = oldValue + clickedValue;
-                //     leftOperand.innerHTML = valueToDisplay;
-                // }
-
-                // Folded this listener1 into listener3 with if if.
-                // var listener1 = function(event) {
-                //     console.log(this.getAttribute("data-value"));
-                //     var leftOperand = document.getElementById("left-operand");
-                //     leftOperand.innerHTML = leftOperand.innerHTML + this.getAttribute("data-value");   
-                // }
-
-                // var numbers = document.getElementsByClassName("number");
-
-                // for (var i = 0; i < numbers.length; i += 1) {
-                //     numbers[i].addEventListener("click", listener1, false);
-                // }
-
+                // Set operation value, if left is already set.
                 var listener2 = function(event) {
-                    console.log(this.getAttribute("data-value"));
-                    var operatorFunction = document.getElementById("operation");
-                    operatorFunction.innerHTML = this.getAttribute("data-value");
+                    if (document.getElementById("left-operand").innerHTML != "") {
+                        console.log(document.getElementById("left-operand").innerHTML);
+                        var operatorFunction = document.getElementById("operation");
+                        operatorFunction.innerHTML = this.getAttribute("data-value");
+                    }
                 }
 
+                // Bind listener to all operator buttons.
                 var operators = document.getElementsByClassName("operator");
-
                 for (var i = 0; i < operators.length; i += 1) {
                     operators[i].addEventListener("click", listener2, false);
                 }
 
+                // Set left or right number values.
                 var listener3 = function(event) {
-                    // console.log(this.getAttribute("data-value"));
+                    // If operator not set, set number to left.
                     if (document.getElementById("operation").innerHTML == "") {
                         var leftOperand = document.getElementById("left-operand");
                         leftOperand.innerHTML = leftOperand.innerHTML + this.getAttribute("data-value");
-                    }
-                    if (document.getElementById("operation").innerHTML == "+" || document.getElementById("operation").innerHTML == "-" || document.getElementById("operation").innerHTML == "*" || document.getElementById("operation").innerHTML == "/") {
+                    } else {
                         var rightOperand = document.getElementById("right-operand");
                         rightOperand.innerHTML = rightOperand.innerHTML + this.getAttribute("data-value");
                     }
                 }
 
+                // Bind listener to all number buttons.
                 var numbers = document.getElementsByClassName("number");
-
                 for (var i = 0; i < numbers.length; i += 1) {
                     numbers[i].addEventListener("click", listener3, false);
                 }
 
+                // Get left, operator, and right and then do math.
                 var listener4 = function(event) {
                     var left = document.getElementById("left-operand").innerHTML;
                     var middle = document.getElementById("operation").innerHTML;
                     var right = document.getElementById("right-operand").innerHTML;
-                    console.log(left);
-                    console.log(middle);
-                    console.log(right);
-                    if (middle == "+") {
-                        var result = parseFloat(left) + parseFloat(right);
+                    // If left middle and right are set, then work.
+                    if (left != "" && middle != "" && right != "") {
+                        if (middle == "+") {
+                            var result = parseFloat(left) + parseFloat(right);
+                        } else if (middle == "-") {
+                            var result = parseFloat(left) - parseFloat(right);
+                        } else if (middle == "*") {
+                            var result = parseFloat(left) * parseFloat(right);
+                        } else if (middle == "/") {
+                            var result = parseFloat(left) / parseFloat(right);
+                        } else if (middle == "sqrt") {
+                            var result = parseFloat(Math.sqrt(left));
+                        } else if (middle == "^2") {
+                            var result = parseFloat(Math.pow(left, 2));
+                        }
+                        // Take result, set to left and clear the others.
+                        var newResult = result.toFixed(2);
+                        document.getElementById("left-operand").innerHTML = newResult;
+                        document.getElementById("operation").innerHTML = "";
+                        document.getElementById("right-operand").innerHTML = "";
                     }
-                    if (middle == "-") {
-                        var result = parseFloat(left) - parseFloat(right);
-                    }
-                    if (middle == "*") {
-                        var result = parseFloat(left) * parseFloat(right);
-                    }
-                    if (middle == "/") {
-                        var result = parseFloat(left) / parseFloat(right);
-                    }
-                    if (middle == "sqrt") {
-                        var result = parseFloat(Math.sqrt(left));
-                    }
-                    if (middle == "^2") {
-                        var result = parseFloat(Math.pow(left, 2));
-                    }
-                    console.log(result); 
-                    var newResult = result.toFixed(2);
-                    console.log(newResult);
-                    document.getElementById("left-operand").innerHTML = newResult;
-                    document.getElementById("operation").innerHTML = "";
-                    document.getElementById("right-operand").innerHTML = "";
                 }
 
+                // Bind listener to the equals button.
                 var equalbtn = document.getElementById("equals");
                 equalbtn.addEventListener("click", listener4, false);
 
+                // Clear left, operator and right.
                 var listener5 = function(event) {
                     var leftOperand = document.getElementById("left-operand");
                     leftOperand.innerHTML = "";
@@ -172,6 +134,7 @@
                     rightOperand.innerHTML = "";
                 }
 
+                // Bind listener to the clear button.
                 var clearbtn = document.getElementById("clear");
                 clearbtn.addEventListener("click", listener5, false);
 
