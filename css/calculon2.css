@@ -147,19 +147,44 @@ header p:first-child {
     margin: 0;
     padding: 0;
     text-align: center;
+    transition: all 180ms ease-in-out;
     vertical-align: middle;
     white-space: nowrap;
     width: 25%;
+}
+
+.number:hover {
+    background: #595959;
+}
+.number:active {
+    background: #808080;
 }
 
 .operator {
     background: #ff8c00;
     color: #000000;
 }
+.operator:hover {
+    background: #cc7000;
+}
+.operator:active {
+    background: #995400;
+}
 
 #clear, #equals {
     background: #cccccc;
     color: #333333;
+}
+#clear:hover, #equals:hover {
+    background: #b3b3b3;
+}
+#clear:active, #equals:active {
+    background: #999999;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 2px limegreen inset;
+    outline: none;
 }
 
 #clear {
