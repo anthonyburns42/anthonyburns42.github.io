@@ -105,7 +105,9 @@ header p:first-child {
     float: left;
     height: 100%;
     line-height: 5;
+    overflow: hidden;
     text-align: right;
+    text-overflow: ellipsis;
     width: 40%;
 }
 #operation {
@@ -121,7 +123,9 @@ header p:first-child {
     float: left;
     height: 100%;
     line-height: 5;
+    overflow: hidden;
     text-align: left;
+    text-overflow: ellipsis;
     width: 40%;
 }
 

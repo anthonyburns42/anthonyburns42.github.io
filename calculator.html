@@ -62,7 +62,6 @@
                 // Set operation value, if left is already set.
                 var listener2 = function(event) {
                     if (document.getElementById("left-operand").innerHTML != "") {
-                        console.log(document.getElementById("left-operand").innerHTML);
                         var operatorFunction = document.getElementById("operation");
                         operatorFunction.innerHTML = this.getAttribute("data-value");
                     }
@@ -107,7 +106,15 @@
                             var result = parseFloat(left) * parseFloat(right);
                         } else if (middle == "/") {
                             var result = parseFloat(left) / parseFloat(right);
-                        } else if (middle == "sqrt") {
+                        }
+                        // Take result, set to left and clear the others.
+                        var newResult = result.toFixed(2);
+                        document.getElementById("left-operand").innerHTML = newResult;
+                        document.getElementById("operation").innerHTML = "";
+                        document.getElementById("right-operand").innerHTML = "";
+                    // for square root or squared, only left and middle are set, then do work.
+                    } else if (left != "" && middle != "" && right == "") {
+                        if (middle == "sqrt") {
                             var result = parseFloat(Math.sqrt(left));
                         } else if (middle == "^2") {
                             var result = parseFloat(Math.pow(left, 2));
