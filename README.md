@@ -18,7 +18,7 @@ Classic programming exercise, results viewable in the console. Printing 1 - 50 i
 
 ### ToDo.html
 
-To Do List project using HTML, CSS, and vanilla JavaScript.
+To Do List project using HTML, CSS, and vanilla JavaScript. An exercise to dive into using pure JavaScript to make a to do list that has two lists; one to do list and one completed list.
 
 ### 404.html
 
@@ -26,8 +26,8 @@ A custom 404 page.
 
 ## Technologies
 
-HTML
-CSS
-JavaScript
-Hosted on a GitHub Page
-Custom Domain
+- HTML
+- CSS
+- JavaScript
+- Hosted on a GitHub Page
+- Custom Domain
