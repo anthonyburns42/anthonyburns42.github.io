@@ -42,7 +42,7 @@ var array = [
     {
         num: 6,
         name: "Deanna Troi",
-        office: "Counsel",
+        office: "Counseling",
         product: "certificate",
         title: "Special Service award",
         completedDate: "03/14/2022"
