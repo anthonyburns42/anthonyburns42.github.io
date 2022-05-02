@@ -156,7 +156,15 @@ var array = [
         name: "Seven of Nine",
         office: "Astrometrics",
         product: "poster",
-        title: "Know Your Borg Poster",
+        title: "Beware the Borg Poster",
         completedDate: "10/31/2022"
+    },
+    {
+        num: 21,
+        name: "Q",
+        office: "Q Continuum",
+        product: "poster",
+        title: "Q Who? Poster",
+        completedDate: "11/24/2022"
     }
 ];
