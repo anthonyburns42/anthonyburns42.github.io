@@ -52,5 +52,24 @@ select.addEventListener("change", changePage);
 
 
 // Statistics, total, unique offices, unique products
+// Print total number of product entries to html.
+document.getElementById("total-count").innerHTML = arLength;
+
+// Function to get unique values of property.
+function getUnique(array, prop) {
+    let b = {};
+    array.forEach(el => {
+        b[el[prop]] = (b[el[prop]] || 0) + 1;
+    });
+    return b;
+}
+
+// Get unique values of Office from the array of objects.
+let offices = getUnique(array, 'office');
+document.getElementById("unq-offices").innerHTML = Object.keys(offices).length;
+
+// Get unique values of Product form the array of objects.
+let products = getUnique(array, 'product');
+document.getElementById("unq-products").innerHTML = Object.keys(products).length;
 
 // Graphs
