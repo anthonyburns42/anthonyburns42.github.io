@@ -64,6 +64,19 @@ function getUnique(array, prop) {
     return b;
 }
 
+// Function to sort array of unique values by how many times it appears in the table. Then print to the id of the location.
+function sortPrint(array, location) {
+    //To sort object by values, results in array of arrays in order largest to smallest.
+    let entries = Object.entries(array);
+    let sorted = entries.sort((a, b) => b[1] - a[1]);
+
+    //Print to html the office and number per office. First clear list, then repopulate list.
+    document.getElementById(location).innerHTML = '';
+    sorted.forEach(function(innerArr) {
+        document.getElementById(location).insertAdjacentHTML('beforeend', "<li>" + innerArr[0] + ": " + innerArr[1] + "</li>");
+    });
+}
+
 // Get unique values of Office from the array of objects.
 let offices = getUnique(array, 'office');
 document.getElementById("unq-offices").innerHTML = Object.keys(offices).length;
@@ -71,5 +84,8 @@ document.getElementById("unq-offices").innerHTML = Object.keys(offices).length;
 // Get unique values of Product form the array of objects.
 let products = getUnique(array, 'product');
 document.getElementById("unq-products").innerHTML = Object.keys(products).length;
+
+sortPrint(offices, 'office-list');
+sortPrint(products, 'prod-list');
 
 // Graphs
