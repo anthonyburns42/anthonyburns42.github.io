@@ -202,7 +202,7 @@ var array = [
     {
         num: 26,
         name: "Hoshi Sato",
-        office: "Comunications",
+        office: "Communications",
         product: "certificate",
         title: "Outstanding Linguist Award",
         completedDate: "12/01/2022"
