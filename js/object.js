@@ -166,5 +166,77 @@ var array = [
         product: "poster",
         title: "Q Who? Poster",
         completedDate: "11/24/2022"
+    },
+    {
+        num: 22,
+        name: "Jonathan Archer",
+        office: "Command",
+        product: "certificate",
+        title: "Appreciation of Starfleet Service",
+        completedDate: "12/11/2022"
+    },
+    {
+        num: 23,
+        name: "T'Pol",
+        office: "Science",
+        product: "graphic",
+        title: "Vulcan Salute Graphic",
+        completedDate: "12/22/2022"
+    },
+    {
+        num: 24,
+        name: "Trip Tucker",
+        office: "Engineering",
+        product: "poster",
+        title: "CDR Promotion Poster",
+        completedDate: "11/21/2022"
+    },
+    {
+        num: 25,
+        name: "Malcolm Reed",
+        office: "Tactical",
+        product: "newsletter",
+        title: "Liberty Port Safety Tips",
+        completedDate: "12/25/2022"
+    },
+    {
+        num: 26,
+        name: "Hoshi Sato",
+        office: "Comunications",
+        product: "certificate",
+        title: "Outstanding Linguist Award",
+        completedDate: "12/01/2022"
+    },
+    {
+        num: 27,
+        name: "Travis Mayweather",
+        office: "Helm",
+        product: "document",
+        title: "NX-01 Driver's Manual",
+        completedDate: "10/14/2022"
+    },
+    {
+        num: 28,
+        name: "Phlox",
+        office: "Medical",
+        product: "newsletter",
+        title: "How to Spot Denobulan Flu",
+        completedDate: "10/02/2022"
+    },
+    {
+        num: 29,
+        name: "Lore",
+        office: "Independent",
+        product: "graphic",
+        title: "Are you an andriod twin?",
+        completedDate: "12/12/2022"
+    },
+    {
+        num: 30,
+        name: "B-4",
+        office: "Daystrom Institute",
+        product: "newsletter",
+        title: "Are you an andriod triplet?",
+        completedDate: "12/12/2022"
     }
 ];
