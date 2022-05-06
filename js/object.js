@@ -234,7 +234,7 @@ var array = [
     {
         num: 30,
         name: "B-4",
-        office: "Daystrom Institute",
+        office: "Daystrom",
         product: "newsletter",
         title: "Are you an andriod triplet?",
         completedDate: "12/12/2022"

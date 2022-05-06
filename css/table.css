@@ -3,8 +3,23 @@ h1, h2, p {
     text-align: center;
 }
 
-table {
+#table-holder {
+    border: 1px solid orange;
     margin: 20px auto;
+    overflow-x: auto;
+    /*width: 200px;*/
+    /*height: 340px;*/
+}
+
+table {
+    margin: 0 auto;
+    /*height: 340px;
+    width: 400px;
+    overflow: auto;*/
+}
+
+tr:nth-child(2n) {
+    background: #e6e6e6;
 }
 
 th, td {
@@ -17,6 +32,30 @@ th {
     font-weight: bold;
 }
 
+th:first-child, td:first-child {
+    width: 70px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 150px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 110px;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 80px;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 300px;
+}
+
+th:last-child, td:last-child {
+    width: 130px;
+}
+
 td.center {
     text-align: center;
 }
@@ -25,7 +64,7 @@ label, select, option {
     font-size: .875rem;
 }
 
-table + div {
+#table-holder + div {
     margin: 20px auto;
     text-align: center;
 }
@@ -50,12 +89,13 @@ h2 > small {
     border-radius: 4px;
     margin: 0 10px;
     padding: 20px;
-    /*height: 300px;*/
+    height: 400px;
+    width: 225px;
 }
 
 #office-list, #prod-list {
     list-style: none;
-    height: 100%;
+    height: 80%;
     width: 100%;
     overflow: auto;
     display: inline-flex;
