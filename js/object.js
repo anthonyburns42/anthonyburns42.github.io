@@ -238,5 +238,85 @@ var array = [
         product: "newsletter",
         title: "Are you an andriod triplet?",
         completedDate: "12/12/2022"
-    }
+    },
+    {
+        num: 31,
+        name: "Christopher Pike",
+        office: "Command",
+        product: "poster",
+        title: "Welcome Aboard!",
+        completedDate: "01/07/2022"
+    },
+    {
+        num: 32,
+        name: "Spock",
+        office: "Science",
+        product: "graphic",
+        title: "Most Logical Graphic",
+        completedDate: "02/08/2022"
+    },
+    {
+        num: 33,
+        name: "Una Chin-Riley",
+        office: "Command",
+        product: "newsletter",
+        title: "Welcome Aboard Packet",
+        completedDate: "03/09/2022"
+    },
+    {
+        num: 34,
+        name: "Nyota Uhura",
+        office: "Communications",
+        product: "document",
+        title: "Xenolinguistics SFI",
+        completedDate: "03/10/2022"
+    },
+    {
+        num: 35,
+        name: "Erica Ortegas",
+        office: "Helm",
+        product: "graphic",
+        title: "Deep Space Navigation",
+        completedDate: "05/11/2022"
+    },
+    {
+        num: 36,
+        name: "Hemmer",
+        office: "Engineering",
+        product: "graphic",
+        title: "Wrap Drive SFI",
+        completedDate: "05/12/2022"
+    },
+    {
+        num: 37,
+        name: "M'Benga",
+        office: "Medical",
+        product: "certificate",
+        title: "Outstanding Service Award",
+        completedDate: "06/12/2022"
+    },
+    {
+        num: 38,
+        name: "Christine Chapel",
+        office: "Medical",
+        product: "certificate",
+        title: "Special Service Award",
+        completedDate: "07/14/2022"
+    },
+    {
+        num: 39,
+        name: "La'an Noonien-Singh",
+        office: "Security",
+        product: "graphic",
+        title: "Red Shirt Safety Tips",
+        completedDate: "08/15/2022"
+    },
+    {
+        num: 40,
+        name: "Sam Kirk",
+        office: "Science",
+        product: "graphic",
+        title: "Blue Shirt vs Red Shirt Story Graphic",
+        completedDate: "08/16/2022"
+    },
 ];
