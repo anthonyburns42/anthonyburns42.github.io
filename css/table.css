@@ -7,15 +7,16 @@ h1, h2, p {
     border: 1px solid orange;
     margin: 20px auto;
     overflow-x: auto;
-    /*width: 200px;*/
+    width: 400px;
     /*height: 340px;*/
 }
 
 table {
     margin: 0 auto;
-    /*height: 340px;
-    width: 400px;
-    overflow: auto;*/
+    table-layout: fixed;
+    width: 700px;
+    /*height: 340px;*/
+    /*overflow: auto;*/
 }
 
 tr:nth-child(2n) {
@@ -26,6 +27,9 @@ th, td {
     border: 1px solid #333333;
     font-size: .875rem;
     padding: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 th {
@@ -33,27 +37,27 @@ th {
 }
 
 th:first-child, td:first-child {
-    width: 70px;
+    width: 9%;
 }
 
 th:nth-child(2), td:nth-child(2) {
-    width: 150px;
+    width: 19%;
 }
 
 th:nth-child(3), td:nth-child(3) {
-    width: 110px;
+    width: 14%;
 }
 
 th:nth-child(4), td:nth-child(4) {
-    width: 80px;
+    width: 14%;
 }
 
 th:nth-child(5), td:nth-child(5) {
-    width: 300px;
+    width: 29%;
 }
 
 th:last-child, td:last-child {
-    width: 130px;
+    width: 15%;
 }
 
 td.center {
