@@ -4,19 +4,16 @@ h1, h2, p {
 }
 
 #table-holder {
-    border: 1px solid orange;
+    border: 2px solid orange;
     margin: 20px auto;
     overflow-x: auto;
-    width: 400px;
-    /*height: 340px;*/
+    width: 100%;
 }
 
 table {
     margin: 0 auto;
     table-layout: fixed;
     width: 700px;
-    /*height: 340px;*/
-    /*overflow: auto;*/
 }
 
 tr:nth-child(2n) {
@@ -79,7 +76,6 @@ label, select, option {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid lightblue;
 }
 
 h2 > small {
@@ -88,20 +84,20 @@ h2 > small {
 }
 
 #statistics div {
-    display: inline-block;
     border: 1px solid #333333;
     border-radius: 4px;
+    display: inline-block;
     margin: 0 10px;
-    padding: 20px;
-    height: 400px;
-    width: 225px;
+    height: 320px;
+    width: 200px;
 }
 
 #office-list, #prod-list {
     list-style: none;
-    height: 80%;
-    width: 100%;
+    padding: 0 20px;
     overflow: auto;
+    height: calc(100% - 90px);
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -112,7 +108,6 @@ h2 > small {
 
 #office-list li, #prod-list li {
     display: inline-block;
-    /*font-size: 14px;*/
     padding: 5px;
 }
 
