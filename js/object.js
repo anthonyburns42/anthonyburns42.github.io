@@ -318,5 +318,5 @@ var array = [
         product: "graphic",
         title: "Blue Shirt vs Red Shirt Story Graphic",
         completedDate: "08/16/2022"
-    },
+    }
 ];
