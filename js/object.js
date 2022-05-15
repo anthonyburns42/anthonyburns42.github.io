@@ -5,6 +5,7 @@ var array = [
         office: "Command",
         product: "certificate",
         title: "Starfleet Retirement",
+        items: "7",
         completedDate: "01/05/2022"
     },
     {
@@ -13,6 +14,7 @@ var array = [
         office: "Command",
         product: "poster",
         title: "Promotion Poster",
+        items: "2",
         completedDate: "01/10/2022"
     },
     {
@@ -21,6 +23,7 @@ var array = [
         office: "Engineering",
         product: "newsletter",
         title: "Warp Drive Tips and Tricks",
+        items: "2",
         completedDate: "01/20/2022"
     },
     {
@@ -29,6 +32,7 @@ var array = [
         office: "Security",
         product: "document",
         title: "Security Monthly Layout",
+        items: "24",
         completedDate: "02/25/2022"
     },
     {
@@ -37,6 +41,7 @@ var array = [
         office: "Medical",
         product: "certificate",
         title: "30-Year Length of Service",
+        items: "1",
         completedDate: "03/01/2022"
     },
     {
@@ -45,6 +50,7 @@ var array = [
         office: "Counseling",
         product: "certificate",
         title: "Special Service Award",
+        items: "1",
         completedDate: "03/14/2022"
     },
     {
@@ -53,6 +59,7 @@ var array = [
         office: "Operations",
         product: "document",
         title: "Android Maintenance Layout",
+        items: "64",
         completedDate: "04/22/2022"
     },
     {
@@ -60,7 +67,8 @@ var array = [
         name: "Wesley Crusher",
         office: "Helm",
         product: "graphic",
-        title: "Earth Day Graphic",
+        title: "Earth Day Graphics",
+        items: "3",
         completedDate: "04/25/2022"
     },
     {
@@ -69,6 +77,7 @@ var array = [
         office: "Ten Forward",
         product: "document",
         title: "Ten Forward Menu Layout",
+        items: "4",
         completedDate: "04/29/2022"
     },
     {
@@ -77,6 +86,7 @@ var array = [
         office: "Engineering",
         product: "graphic",
         title: "Engineering Story Graphic",
+        items: "1",
         completedDate: "05/02/2022"
     },
     {
@@ -85,6 +95,7 @@ var array = [
         office: "Command",
         product: "graphic",
         title: "Delta Quadrant Story Graphic",
+        items: "1",
         completedDate: "05/07/2022"
     },
     {
@@ -93,6 +104,7 @@ var array = [
         office: "Command",
         product: "poster",
         title: "Know the Maquis Poster",
+        items: "2",
         completedDate: "05/15/2022"
     },
     {
@@ -101,6 +113,7 @@ var array = [
         office: "Security",
         product: "certificate",
         title: "Outstanding Service Award",
+        items: "1",
         completedDate: "05/24/2022"
     },
     {
@@ -109,6 +122,7 @@ var array = [
         office: "Helm",
         product: "graphic",
         title: "Piloting Made Easy Story Graphic",
+        items: "1",
         completedDate: "06/01/2022"
     },
     {
@@ -117,6 +131,7 @@ var array = [
         office: "Engineering",
         product: "newsletter",
         title: "Klingon Language Layout",
+        items: "4",
         completedDate: "06/22/2022"
     },
     {
@@ -125,6 +140,7 @@ var array = [
         office: "Operations",
         product: "certificate",
         title: "Outstanding Ensign Award",
+        items: "1",
         completedDate: "07/05/2022"
     },
     {
@@ -133,6 +149,7 @@ var array = [
         office: "Medical",
         product: "document",
         title: "Holographic Maintenance Monthly Layout",
+        items: "28",
         completedDate: "07/30/2022"
     },
     {
@@ -141,6 +158,7 @@ var array = [
         office: "Galley",
         product: "document",
         title: "Voyager Mess Deck Menu Layout",
+        items: "8",
         completedDate: "08/17/2022"
     },
     {
@@ -149,6 +167,7 @@ var array = [
         office: "Medical",
         product: "graphic",
         title: "Medical Story Graphic",
+        items: "1",
         completedDate: "09/26/2022"
     },
     {
@@ -157,6 +176,7 @@ var array = [
         office: "Astrometrics",
         product: "poster",
         title: "Beware the Borg Poster",
+        items: "1",
         completedDate: "10/31/2022"
     },
     {
@@ -165,6 +185,7 @@ var array = [
         office: "Q Continuum",
         product: "poster",
         title: "Q Who? Poster",
+        items: "1",
         completedDate: "11/24/2022"
     },
     {
@@ -173,6 +194,7 @@ var array = [
         office: "Command",
         product: "certificate",
         title: "Appreciation of Starfleet Service",
+        items: "1",
         completedDate: "12/11/2022"
     },
     {
@@ -181,6 +203,7 @@ var array = [
         office: "Science",
         product: "graphic",
         title: "Vulcan Salute Graphic",
+        items: "1",
         completedDate: "12/22/2022"
     },
     {
@@ -189,6 +212,7 @@ var array = [
         office: "Engineering",
         product: "poster",
         title: "CDR Promotion Poster",
+        items: "2",
         completedDate: "11/21/2022"
     },
     {
@@ -197,6 +221,7 @@ var array = [
         office: "Tactical",
         product: "newsletter",
         title: "Liberty Port Safety Tips",
+        items: "2",
         completedDate: "12/25/2022"
     },
     {
@@ -205,6 +230,7 @@ var array = [
         office: "Communications",
         product: "certificate",
         title: "Outstanding Linguist Award",
+        items: "1",
         completedDate: "12/01/2022"
     },
     {
@@ -213,6 +239,7 @@ var array = [
         office: "Helm",
         product: "document",
         title: "NX-01 Driver's Manual",
+        items: "24",
         completedDate: "10/14/2022"
     },
     {
@@ -221,6 +248,7 @@ var array = [
         office: "Medical",
         product: "newsletter",
         title: "How to Spot Denobulan Flu",
+        items: "1",
         completedDate: "10/02/2022"
     },
     {
@@ -229,6 +257,7 @@ var array = [
         office: "Independent",
         product: "graphic",
         title: "Are you an andriod twin?",
+        items: "1",
         completedDate: "12/12/2022"
     },
     {
@@ -237,6 +266,7 @@ var array = [
         office: "Daystrom",
         product: "newsletter",
         title: "Are you an andriod triplet?",
+        items: "4",
         completedDate: "12/12/2022"
     },
     {
@@ -245,6 +275,7 @@ var array = [
         office: "Command",
         product: "poster",
         title: "Welcome Aboard!",
+        items: "1",
         completedDate: "01/07/2022"
     },
     {
@@ -253,6 +284,7 @@ var array = [
         office: "Science",
         product: "graphic",
         title: "Most Logical Graphic",
+        items: "1",
         completedDate: "02/08/2022"
     },
     {
@@ -261,6 +293,7 @@ var array = [
         office: "Command",
         product: "newsletter",
         title: "Welcome Aboard Packet",
+        items: "2",
         completedDate: "03/09/2022"
     },
     {
@@ -269,6 +302,7 @@ var array = [
         office: "Communications",
         product: "document",
         title: "Xenolinguistics SFI",
+        items: "32",
         completedDate: "03/10/2022"
     },
     {
@@ -277,6 +311,7 @@ var array = [
         office: "Helm",
         product: "graphic",
         title: "Deep Space Navigation",
+        items: "1",
         completedDate: "05/11/2022"
     },
     {
@@ -285,6 +320,7 @@ var array = [
         office: "Engineering",
         product: "graphic",
         title: "Wrap Drive SFI",
+        items: "1",
         completedDate: "05/12/2022"
     },
     {
@@ -293,6 +329,7 @@ var array = [
         office: "Medical",
         product: "certificate",
         title: "Outstanding Service Award",
+        items: "1",
         completedDate: "06/12/2022"
     },
     {
@@ -301,6 +338,7 @@ var array = [
         office: "Medical",
         product: "certificate",
         title: "Special Service Award",
+        items: "1",
         completedDate: "07/14/2022"
     },
     {
@@ -309,6 +347,7 @@ var array = [
         office: "Security",
         product: "graphic",
         title: "Red Shirt Safety Tips",
+        items: "1",
         completedDate: "08/15/2022"
     },
     {
@@ -317,6 +356,7 @@ var array = [
         office: "Science",
         product: "graphic",
         title: "Blue Shirt vs Red Shirt Story Graphic",
+        items: "1",
         completedDate: "08/16/2022"
     }
 ];

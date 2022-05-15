@@ -9,6 +9,14 @@ const arLength = array.length;
 // Divide array length by 10 to find number of pages.
 const pageNum = arLength/10;
 
+function countItems() {
+    let total = 0;
+    array.forEach((item) => {
+        let count = parseInt(item.items);
+        total = total + count;
+    });
+    return total;
+}
 
 function createTable(min, max) {
     // Iterate over array, print to html.
@@ -16,7 +24,7 @@ function createTable(min, max) {
         if (index >= min && index <= max) {
             let tr = document.createElement("tr");
             table.appendChild(tr);
-            tr.innerHTML = "<td class='center'>" + item.num + "</td><td>" + item.name + "</td><td>" + item.office + "</td><td>" + item.product + "</td><td>" + item.title + "</td><td class='center'>" + item.completedDate + "</td>";
+            tr.innerHTML = "<td class='center'>" + item.num + "</td><td>" + item.name + "</td><td>" + item.office + "</td><td>" + item.product + "</td><td>" + item.title + "</td><td class='center'>" + item.items + "</td><td class='center'>" + item.completedDate + "</td>";
 
         }
     });
@@ -54,6 +62,10 @@ select.addEventListener("change", changePage);
 // Statistics, total, unique offices, unique products
 // Print total number of product entries to html.
 document.getElementById("total-count").innerHTML = arLength;
+
+//Count the total items of all entries.
+let totalItems = countItems();
+document.getElementById("total-items").innerHTML = totalItems;
 
 // Function to get unique values of property.
 function getUnique(array, prop) {
