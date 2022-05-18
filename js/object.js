@@ -358,5 +358,95 @@ var array = [
         title: "Blue Shirt vs Red Shirt Story Graphic",
         items: "1",
         completedDate: "08/16/2022"
-    }
+    },
+    {
+        num: 41,
+        name: "Beckett Mariner",
+        office: "Helm",
+        product: "graphic",
+        title: "Rule Breaking and How to Get Away With It",
+        items: "1",
+        completedDate: "01/11/2023"
+    },
+    {
+        num: 42,
+        name: "Brad Boimler",
+        office: "Helm",
+        product: "graphic",
+        title: "Why Sticking to the Rules Is Important",
+        items: "1",
+        completedDate: "02/12/2023"
+    },
+    {
+        num: 43,
+        name: "D'Vana Tendi",
+        office: "Medical",
+        product: "newsletter",
+        title: "Orion Vacation Spots",
+        items: "8",
+        completedDate: "03/23/2023"
+    },
+    {
+        num: 44,
+        name: "Sam Rutherford",
+        office: "Engineering",
+        product: "certificate",
+        title: "Special Service Award",
+        items: "1",
+        completedDate: "04/14/2023"
+    },
+    {
+        num: 45,
+        name: "Carol Freeman",
+        office: "Command",
+        product: "graphic",
+        title: "Captains and their Starships",
+        items: "1",
+        completedDate: "05/15/2023"
+    },
+    {
+        num: 46,
+        name: "Jack Ransom",
+        office: "Command",
+        product: "poster",
+        title: "Lt Col Promotion Poster",
+        items: "2",
+        completedDate: "07/17/2023"
+    },
+    {
+        num: 47,
+        name: "Shaxs",
+        office: "Security",
+        product: "document",
+        title: "Bajoran Martial Arts",
+        items: "32",
+        completedDate: "08/18/2023"
+    },
+    {
+        num: 48,
+        name: "T'Ana",
+        office: "Medical",
+        product: "graphic",
+        title: "I'm a Doctor",
+        items: "1",
+        completedDate: "10/20/2023"
+    },
+    {
+        num: 49,
+        name: "Kayshon",
+        office: "Security",
+        product: "graphic",
+        title: "His Eyes Open",
+        items: "1",
+        completedDate: "11/25/2023"
+    },
+    {
+        num: 50,
+        name: "Thomas Riker",
+        office: "Maquis",
+        product: "poster",
+        title: "Transporter Accident Awareness Month",
+        items: "2",
+        completedDate: "12/23/2023"
+    },
 ];
