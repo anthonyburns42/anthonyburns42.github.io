@@ -448,5 +448,5 @@ var array = [
         title: "Transporter Accident Awareness Month",
         items: "2",
         completedDate: "12/23/2023"
-    },
+    }
 ];

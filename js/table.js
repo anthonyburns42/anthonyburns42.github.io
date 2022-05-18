@@ -89,6 +89,15 @@ function sortPrint(array, location) {
     });
 }
 
+// Function to populate select for products.
+function makeSelect(array, location) {
+    let entries = Object.entries(array);
+    entries.sort();
+    entries.forEach(function(innerArr) {
+        document.getElementById(location).insertAdjacentHTML('beforeend', "<option value='" + innerArr[0] + "'>" + innerArr[0] + "</option>");
+    });
+}
+
 // Get unique values of Office from the array of objects.
 let offices = getUnique(array, 'office');
 document.getElementById("unq-offices").innerHTML = Object.keys(offices).length;
@@ -98,6 +107,7 @@ let products = getUnique(array, 'product');
 document.getElementById("unq-products").innerHTML = Object.keys(products).length;
 
 sortPrint(offices, 'office-list');
+makeSelect(products, 'products');
 sortPrint(products, 'prod-list');
 
 // Graphs

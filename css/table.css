@@ -146,6 +146,20 @@ section > h3 {
     margin-top: 10px;
 }
 
+#control {
+    text-align: left;
+}
+
+#control > div:nth-child(2) {
+    margin-top: 15px;
+}
+
+#control > div:nth-child(3),
+#control > div:nth-child(4),
+#control > button {
+    margin-top: 10px;
+}
+
 #table-holder {
     border: 2px solid orange;
     margin: 20px auto;
