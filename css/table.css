@@ -266,3 +266,44 @@ label, select, option {
     content: "\2022";
     padding-right: 5px;
 }
+
+.container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 130px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background: repeating-linear-gradient(0deg,#ddd,#ddd 1px,#fff 1px,#fff 26px);
+    border-top: 1px solid #ccc;
+}
+
+.container div:first-child {
+    background: #43aa8b;
+    height: 5px;
+    width: 70px;
+}
+
+.container div:nth-child(2) {
+    background: #f9c74f;
+    height: 5px;
+    width: 70px;
+}
+
+.graph-labels {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.graph-labels div {
+    width: 70px;
+}
+
+.graph-labels p {
+    font-size: 14px;
+}
